@@ -1,138 +1,138 @@
 /* Estilos base */
-:root{
-    --bitcoin-orange: #6d00d2;
-    --soft-orange: #e4d5ff;
-    --secondary-blue: #129af7;
-    --soft-blue: #e7f5ff;
-    --warm-black: #201e1c;
-    --grey: #282623;
-    --off-white: #f2f8f7;
-    --just-white: #fff;
+:root {
+  --bitcoin-orange: #6d00d2;
+  --soft-orange: #e4d5ff;
+  --secondary-blue: #129af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --grey: #282623;
+  --off-white: #f2f8f7;
+  --just-white: #fff;
 }
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html{
-    font-size: 62.5%;
-    font-family: 'DM sans', sans-serif;
+html {
+  font-size: 62.5%;
+  font-family: "DM sans", sans-serif;
 }
 /* Implementacion BEM */
-header{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-width: 320px;
-    height: 600px;
-    text-align: center;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #b57ddf);
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 600px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #b57ddf);
 }
-header img{
-    width: 200px;
-    height: 50px;
-    align-self: center;
+header img {
+  width: 200px;
+  height: 50px;
+  align-self: center;
 }
-.header--title-container{
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    height: 218px;
-    margin-top: 100px;
-    text-align: center;
-    align-self: center;
+.header--title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 100px;
+  text-align: center;
+  align-self: center;
 }
 /* Uso de linear-gradient */
-.header--title-container h1{
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--just-white);
+.header--title-container h1 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
 }
-.header--title-container p{
-    margin-top: 35px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: var(--soft-orange);
+.header--title-container p {
+  margin-top: 35px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
 }
 /* Uso de position para boton flotante */
-.header--title-container .header--button{
-    position: absolute;
-    left: calc(50% - 118px);
-    top: 540px;
-    display: block;
-    margin-top: 35px;
-    padding: 15px;
-    width: 229px;
-    height: 48px;
-    background-color: var(--off-white);
-    box-shadow: 0px 4px 8px rgba(89,73, 30, 0.16);
-    border: none;
-    border-radius: 5px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--black);
+.header--title-container .header--button {
+  position: absolute;
+  left: calc(50% - 118px);
+  top: 540px;
+  display: block;
+  margin-top: 35px;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  background-color: var(--off-white);
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
 }
-.header--button span{
-    display: inline-block;
-    width: 13px;
-    height: 8px;
-    margin-left: 10px;
-    /* left: 0;
+.header--button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  /* left: 0;
     right: 0;
     margin-right: auto;
     margin-left: auto; */
-    background-image: url("./assets/icons/down-arrow.svg");
+  background-image: url("./assets/icons/down-arrow.svg");
 }
 /* Estructura base de la seccion de intercambio */
-main{
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    background-color: var(--off-white);
+main {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background-color: var(--off-white);
 }
-.main-exchange-container{
-    width: 100%;
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 30px;
-    text-align: center;
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
 }
-.main-exchange-container--title{
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    margin: 0 auto;
+.main-exchange-container--title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 /* Imagen de brackground */
-.main-exchange-container .backgroundImg{
-    width: 300px;
-    height: 400px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    background-image: url("./assets/img/ls-pic-grande.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.main-exchange-container .backgroundImg {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-image: url("./assets/img/ls-pic-grande.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.main-exchange-container h2{
-    margin-bottom: 30px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--black);
+.main-exchange-container h2 {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
 }
-.main-exchange-container p{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    color: #757575;
+.main-exchange-container p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
 }
 /* Estilos base de tabla de monedas
 .main-currency-table{
@@ -225,278 +225,296 @@ main{
     color: var(--warm-black);
 }
 /* Estructura base de la seccion de beneficios */
-.main-product-detail{
-    position: relative;
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding: 20px 10px;
-    background-color: var(--warm-black);
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black);
 }
-.product-detail--batata-logo{
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 25px;
-    top: -10px;
-    left: calc(50% - 20px);
-    background-image: url("./assets/img/stepsize-icon.svg");
+.product-detail--batata-logo {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 35px;
+  top: -15px;
+  left: calc(50% - 20px);
+  background-image: url("./assets/img/stepsize-icon.svg");
 }
-.product-detail--title{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    margin-top: 50px;
-    text-align: center;
+.product-detail--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
 }
-.product-detail--title h2{
-    margin-bottom: 20px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--just-white);
+.product-detail--title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
 }
-.product-detail--title p{
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #808080;
+.product-detail--title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
 }
 /* Maquetando tajertas de beneficios */
-.product-detail--card{
-    width: 90%;
-    min-width: 288px;
-    max-width: 400px;
-    height: 150px;
-    margin: 15px auto;
-    padding: 15px;
-    background-color: var(--black);
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+.product-detail--card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.product-detail--card .clock{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url("./assets/icons/clock.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.product-detail--card .clock {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url("./assets/icons/clock.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.product-detail--card .eye{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url("./assets/icons/eye.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.product-detail--card .eye {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url("./assets/icons/eye.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.product-detail--card .dollar{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url("./assets/icons/dollar-sign.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.product-detail--card .dollar {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url("./assets/icons/dollar-sign.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.product-detail--card .check{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url("./assets/icons/check-circle.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.product-detail--card .check {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: url("./assets/icons/check-circle.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.product--card-title{
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color: var(--just-white);
+.product--card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
 }
-.product--card-body{
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #808080;
+.product--card-body {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
 }
 /* Maquetando seccion comodin */
-.bitcoin-img-container{
-    width: 100%;
-    min-width: 320px;
-    height: 60vh;
-    background-image: url("./assets/img/DALL·E\ 2024-01-22\ 14.52.22\ -\ desarrollador\ web\ con\ fondo\ violeta\ .png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 320px;
+  height: 60vh;
+  background-image: url("./assets/img/DALL·E\ 2024-01-22\ 14.52.22\ -\ desarrollador\ web\ con\ fondo\ violeta\ .png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
-.bitcoin-img-container h2{
-    padding-top: 60px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--just-white);
+.bitcoin-img-container h2 {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
 }
 /* Aplicacion estilos a la seccion de planes */
-.main-plans-container{
-    width: 100%;
-    min-width: 320px;
-    padding-bottom: 70px;
-    text-align: center;
+.main-plans-container {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
 }
-.plans--title{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 50px;
+.plans--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
-.plans--title h2{
-    padding-top: 50px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--black);
+.plans--title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
 }
-.plans--title p{
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: #757575;
+.plans--title p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
 }
 /* Aplicando estilos a las tarjetas de la seccion de planes */
 /* Scroll horizontal con CSS */
-.plans-container--slider{
-    display: flex;
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+.plans-container--slider {
+  display: flex;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 .plan-info-container {
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.plans-container--card{
-    position: relative;
-    scroll-snap-align: center;
-    width: 70%;
-    min-width: 190px;
-    max-width: 300px;
-    height: 250px;
-    margin: 50px 5px 0;
-    padding: 0 15px;
-    background-color: var(--just-white);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+.plans-container--card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px 5px 0;
+  padding: 0 15px;
+  background-color: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 /* Detallando estilo en tarjetas de planes */
-.recomended{
-    position: absolute;
-    width: 120px;
-    height: 31px;
-    top: -15px;
-    left: calc(50% - 60px);
-    font-size: 1.2rem;
-    padding: 6px;
-    background-color: var(--bitcoin-orange);
-    border-radius: 8px;
-    color: var(--just-white);
+.recomended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  padding: 7px;
+  background-color: var(--bitcoin-orange);
+  border-radius: 8px;
+  color: var(--just-white);
 }
-.plan-card--title{
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: var(--black);
+.plan-card--title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--black);
 }
-.plan-card--price{
-    padding: 5px 0;
-    font-size: 5.2rem;
-    font-weight: bold;
-    line-height: 5.3rem;
-    color: var(--black);
+.plan-card--price {
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: var(--black);
 }
-.plan-card--price span{
-    font-size: 1.2rem;
-    font-weight: 300;
-    vertical-align: 25px;
+.plan-card--price span {
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: 25px;
 }
-.plan-card--saving{
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #757575;
+.plan-card--saving {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #757575;
 }
 /* Aplicando estilos al boton de call to action */
-.plan-card--ca{
-    width: 150px;
-    height: 48px;
-    margin-top: 20px;
-    background-color: #faf8f7;
-    border: 2px solid var(--bitcoin-orange);
-    border-radius: 4px;
-    font-family: "DM Sans", sans-serif;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color: var(--black);
+.plan-card--ca {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+  display: flex; /* Añade display flex */
+  align-items: center; /* Alinea el contenido al centro verticalmente */
+  justify-content: center;
 }
-.plan-card--ca span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url("./assets/icons/orange-right-arrow.svg");
-    vertical-align: text-bottom;
+.plan-card--ca a {
+  text-decoration: none;
+  outline: none;
+}
+.plan-card--ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("./assets/icons/orange-right-arrow.svg");
+  vertical-align: text-bottom;
 }
 /* Scroll horizontal con CSS */
 
 /* Footer */
-footer{
+/* Estilos generales del footer */
+footer {
     display: flex;
-    width: 100%;
-    height: 150px;
+    flex-wrap: wrap;
     background-color: var(--bitcoin-orange);
-}
-footer section{
+    padding: 20px;
+    justify-content: center; /* Añade esta línea para centrar horizontalmente */
+  }
+  
+  /* Estilos del primer rectángulo (secciones izquierda y derecha) */
+  .left,
+  .right {
+    flex: 1;
     display: flex;
-    width: 50%;
-    justify-content: center;
     align-items: center;
-}
-footer .left ul{
+    justify-content: center; /* Añade esta línea para centrar horizontalmente */
+  }
+  
+  .left ul {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     list-style: none;
-}
-footer{
-    font-size: 12px ;
-    align-self: center;
+  }
+  
+  .left li a {
+    text-decoration: none;
     color: var(--just-white);
-}
-footer img{
+    font-size: 14px;
+  }
+  
+  .right a img {
     width: 200px;
     height: 50px;
     align-self: center;
-}
-.left li{
-    margin: 10px 0;
-}
-.left a{
-    text-decoration: none;
-    color: var(--just-white);
-    
-}
+  }
+  
 
+/* Estilos del segundo rectángulo (sección de derechos de autor) */
+.copyright {
+    flex-basis: 100%; /* Ocupa el 100% del ancho */
+    color: var(--just-white);
+    font-size: 14px;
+    margin-top: 20px; /* Espacio entre los rectángulos */
+    text-align: center;
+  }
